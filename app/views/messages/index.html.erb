@@ -15,18 +15,23 @@
   </div>
 </div>
 
-<%= form_for(@message) do |f| %>
-  <span class="glyphicon glyphicon-user" aria-hidden="true"</span>
-  ユーザ名:
-  <%= f.text_field :name %>
+<%= form_for(@message, html: {class: "form-horizontal"}) do |f| %>
+    <label for="message_name" class="control-label col-md-2"> ユーザ名:</label>
+  <div class="col-md-4">
+	  <%= f.text_field :name %>
+  </div>
 
   <br>
   <br>
-  <span class="glyphicon glyphicon-comment" aria-hidden="true"</span>
-  コメント:
-    <%= f.text_area :body %>
+
+  <label for="message_name" class="control-label col-md-2">コメント:</label>
+  <div class="col-md-2">
+  <%= f.text_area :body %>
+  </div>	  
     <br>
     <br>
+    <br>
+    <br> 
     <%= f.submit class: "btn btn-sm btn-primary" %>
     <br>
     <br>
