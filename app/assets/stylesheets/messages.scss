@@ -3,14 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#message_body{
+.field_with_errors #message_body{
   display: inline-block;
   border: 1px solid #f00;
   width: 100%;
 }
 
 
-#message_name{
+.field_with_errors #message_name{
   display: inline-block;
   border: 1px solid #f00;
 }
