@@ -34,7 +34,7 @@ class MessagesController < ApplicationController
 	  @message.destroy
 	  redirect_to root_path, notice: 'メッセージを削除しました'
   end
-end
+
 
 
   private
@@ -46,4 +46,5 @@ end
   def set_message
 	  @message = Message.find(params[:id])
   end
+end
 
